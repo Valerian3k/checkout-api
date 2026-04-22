@@ -70,8 +70,8 @@ app.post("/create-checkout-session", async (req, res) => {
         },
       ],
 
-      success_url: "http://localhost:5173/success",
-      cancel_url: "http://localhost:5173/cancel",
+      success_url: "https://wojtasm.pl/vallora",
+      cancel_url: "https://wojtasm.pl/vallora",
     });
 
     res.json({ url: session.url });
