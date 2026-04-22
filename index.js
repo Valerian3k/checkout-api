@@ -53,3 +53,7 @@ app.post("/create-checkout-session", async (req, res) => {
 
   res.json({ url: session.url });
 });
+
+app.get("/", (req, res) => {
+  res.json({ ok: true });
+});
