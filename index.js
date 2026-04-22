@@ -17,7 +17,7 @@ app.use(cors({
   allowedHeaders: ["Content-Type"],
 }));
 
-app.options("*", cors());
+app.options(/.*/, cors());
 app.use(express.json());
 
 app.post("/create-checkout-session", async (req, res) => {
